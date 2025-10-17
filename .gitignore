@@ -1,2 +1,3 @@
 *.pb.go
+pb_gen
 .git
