@@ -1,0 +1,23 @@
+// calculator.proto
+syntax = "proto3";
+
+option go_package = "example.com/calculator";
+
+package calculator;
+
+// The calculator service definition.
+service Calculator {
+  // Returns the sum of two numbers
+  rpc Add (AddRequest) returns (AddResponse) {}
+}
+
+// The request message containing two numbers.
+message AddRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+// The response message containing the sum.
+message AddResponse {
+  int32 result = 1;
+}
