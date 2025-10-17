@@ -1,4 +1,4 @@
-module github.com/adrian/golang-grpc-1
+module example.com/calculator
 
 go 1.25.3
 
